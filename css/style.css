@@ -58,7 +58,7 @@ body {
   margin: 0;
   font-size: 16px;
   color: var(--color-text);
-  font-family: Hiragino Sans GB;
+  font-family: Noto Serif SC;
   background-color: var(--color-background);
   background-repeat: no-repeat;
   background-attachment: fixed;
