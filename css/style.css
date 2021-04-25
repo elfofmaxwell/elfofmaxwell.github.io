@@ -6,7 +6,7 @@
   --color-text-secondary: #4e4e4e;
   --color-text-third: #999;
   --color-border: #eee;
-  --background-image: url("/images/theme/welcome-image-4.jpg");
+  --background-image: url("/images/theme/welcome-image-5.jpg");
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -798,7 +798,7 @@ body input {
   width: 100%;
   height: 100%;
   top: 0;
-  background: url("/images/theme/rotating_logo.gif") no-repeat center;
+  background: url("/images/theme/rotating_logo_2.gif") no-repeat center;
   background-color: var(--color-background);
   z-index: 2019;
   overflow: hidden;
