@@ -7,6 +7,7 @@
   --color-text-third: #999;
   --color-border: #eee;
   --background-image: url("/images/theme/welcome-image-4-1.jpg");
+  --loading-image: url("/images/theme/rotating_logo_bright.gif");
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -21,6 +22,7 @@
     --color-text-third: #656765;
     --color-border: #2b3038;
     --background-image: url("/images/theme/welcome-image-3-1.jpg");
+    --loading-image: url("/images/theme/rotating_logo_dark.gif");
   }
 }
 [color-mode='dark'] {
@@ -32,6 +34,7 @@
   --color-text-third: #656765;
   --color-border: #2b3038;
   --background-image: url("/images/theme/welcome-image-3-1.jpg");
+  --loading-image: url("/images/theme/rotating_logo_dark.gif");
 }
 [color-mode='dark'] .tags a {
   color: var(--color-text) !important;
@@ -58,7 +61,7 @@ body {
   margin: 0;
   font-size: 18px;
   color: var(--color-text);
-  font-family: serif;
+  font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "Hiragino Sans";
   background-color: var(--color-background);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -798,7 +801,7 @@ body input {
   width: 100%;
   height: 100%;
   top: 0;
-  background: url("/images/theme/rotating_logo_2.gif") no-repeat center;
+  background: var(--loading-image) no-repeat center;
   background-color: var(--color-background);
   z-index: 2019;
   overflow: hidden;
@@ -1110,7 +1113,7 @@ body input {
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 70% top;
   background-attachment: fixed;
   position: relative;
   display: flex;
