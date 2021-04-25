@@ -16,9 +16,9 @@
     --color-background: #1c1c1c;
     --color-background-secondary: #0c0c0c;
     --color-background-rgb: 30, 33, 40;
-    --color-text: #91989f;
-    --color-text-secondary: #656765;
-    --color-text-third: #373c38;
+    --color-text: #fffffb;
+    --color-text-secondary: #bdc0ba;
+    --color-text-third: #656765;
     --color-border: #2b3038;
     --background-image: url("/images/theme/welcome-image-3-1.jpg");
   }
@@ -27,9 +27,9 @@
   --color-background: #1c1c1c;
   --color-background-secondary: #0c0c0c;
   --color-background-rgb: 30, 33, 40;
-  --color-text: #91989f;
-  --color-text-secondary: #656765;
-  --color-text-third: #373c38;
+  --color-text: #fffffb;
+  --color-text-secondary: #bdc0ba;
+  --color-text-third: #656765;
   --color-border: #2b3038;
   --background-image: url("/images/theme/welcome-image-3-1.jpg");
 }
@@ -56,9 +56,9 @@
 }
 body {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--color-text);
-  font-family: Noto Serif SC;
+  font-family: serif;
   background-color: var(--color-background);
   background-repeat: no-repeat;
   background-attachment: fixed;
