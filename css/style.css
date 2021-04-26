@@ -1178,7 +1178,7 @@ body input {
   display: inline;
   text-align: center;
   font-size: 3.5em;
-  font-family: 'Quicksand', 'Vollkorn', serif;
+  font-family: 'Quicksand', 'Vollkorn', serif, 'Times New Roman', 'SimSun';
   font-weight: 300;
   color: #fff;
   margin: 0;
