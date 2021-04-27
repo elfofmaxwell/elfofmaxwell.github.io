@@ -195,7 +195,7 @@
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>四月 24, 2021</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>203</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>246</span>
     </div>
   </div>
 </section>
@@ -207,10 +207,11 @@
 <p>生物技术&amp;数学专业。主攻生物影像-光学显微镜方面。</p>
 <p>爱好摄影。爱好ACGN。星詠み。</p>
 <h2 id="This-Site"><a href="#This-Site" class="headerlink" title="This Site"></a>This Site</h2><p>本站并未开启任何追踪功能。</p>
+<p>评论系统基于Gitalk。</p>
 <p>头图：</p>
 <p>​    昼间：@Niigata with Sony A7R3/FE 35mm f/1.4</p>
 <p>​    夜间：@Tokyo with Sony A7R3/FE 35mm f/1.4</p>
-<p>转载请注明出处。</p>
+<p>转载请注明出处 – 虽然我想这么说，不过反正这是个静态开源站，随你们便吧。</p>
 
       </section>
       <section class="extra">
@@ -219,6 +220,37 @@
         
         
       </section>
+      
+        <section class="comments">
+  
+    <div class="btn" id="comments-btn">查看评论</div>
+  
+  
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk" class="gitalk"></div>
+<script defer src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  window.onload = function () {
+    var gitalk = new Gitalk({
+      clientID: '46526352bf043eed4741',
+      clientSecret: '26236435d13b97eaec6c3bef5eb556e7038514a9',
+      id: window.location.pathname,
+      repo: 'elfofmaxwell.github.io',
+      owner: 'elfofmaxwell',
+      admin: 'elfofmaxwell'
+    });
+    if ( true ) {
+      $("#comments-btn").on("click", function () {
+        $(this).hide();
+        gitalk.render('gitalk');
+      });
+    } else {
+      gitalk.render('gitalk');
+    }
+  }
+</script>
+
+</section>
       
     </section>
   </div>

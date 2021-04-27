@@ -239,6 +239,37 @@
 
       </section>
       
+        <section class="comments">
+  
+    <div class="btn" id="comments-btn">查看评论</div>
+  
+  
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk" class="gitalk"></div>
+<script defer src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  window.onload = function () {
+    var gitalk = new Gitalk({
+      clientID: '46526352bf043eed4741',
+      clientSecret: '26236435d13b97eaec6c3bef5eb556e7038514a9',
+      id: window.location.pathname,
+      repo: 'elfofmaxwell.github.io',
+      owner: 'elfofmaxwell',
+      admin: 'elfofmaxwell'
+    });
+    if ( true ) {
+      $("#comments-btn").on("click", function () {
+        $(this).hide();
+        gitalk.render('gitalk');
+      });
+    } else {
+      gitalk.render('gitalk');
+    }
+  }
+</script>
+
+</section>
+      
     </section>
   </div>
 </article></div>
