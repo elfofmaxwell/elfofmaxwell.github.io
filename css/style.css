@@ -1113,7 +1113,7 @@ body input {
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
+  background-position: bottom;
   background-attachment: fixed;
   position: relative;
   display: flex;
